@@ -11,35 +11,33 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D in [您的专业]**, University College London, [开始年份] - Present
+  * Supervisor: [导师姓名]
+  * Research Focus: [研究方向]
+* **[硕士学位] in [专业]**, [大学名称], [毕业年份]
+* **[学士学位] in [专业]**, [大学名称], [毕业年份]
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **PhD Research**, University College London, [开始年份] - Present
+  * [研究项目描述]
+  * [主要成果或贡献]
+  * Supervisor: [导师姓名]
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **[其他研究经历]**, [机构名称], [时间]
+  * [工作内容描述]
+  * [主要成果]
+  * Supervisor: [导师姓名]
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Languages**: Python, R, MATLAB, [其他语言]
+* **Research Methods**: 
+  * [方法1]
+  * [方法2]
+  * [方法3]
+* **Software & Tools**: [相关软件和工具]
+* **Languages**: English (Fluent), Chinese (Native), [其他语言]
 
 Publications
 ======
@@ -59,6 +57,16 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Awards and Honors
 ======
-* Currently signed in to 43 different slack teams
+* [奖项名称], [颁发机构], [年份]
+* [奖学金名称], [年份]
+
+Service and Leadership
+======
+* [服务经历，如审稿、组织会议等]
+* [领导经历]
+
+Professional Memberships
+======
+* [专业组织成员资格]
