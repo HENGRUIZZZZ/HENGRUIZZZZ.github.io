@@ -1,42 +1,127 @@
 
-# Academic Pages
+# Hengrui Zhang's Academic Website
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fhengruizzzz.github.io)
+![GitHub last commit](https://img.shields.io/github/last-commit/HENGRUIZZZZ/HENGRUIZZZZ.github.io)
+![GitHub repo size](https://img.shields.io/github/repo-size/HENGRUIZZZZ/HENGRUIZZZZ.github.io)
 
-Academic Pages is a Github Pages template for academic websites.
+Welcome to the source code repository for my personal academic website! This site showcases my research, publications, and academic journey as a PhD student at University College London.
 
+🌐 **Live Website**: [https://hengruizzzz.github.io](https://hengruizzzz.github.io)
 
-# Getting Started
+## 📖 About This Website
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+This is my personal academic website built with Jekyll and hosted on GitHub Pages. The site includes:
 
-See more info at https://academicpages.github.io/
+- **About Me**: Research interests and academic background
+- **Publications**: List of my research papers and publications
+- **CV**: Comprehensive curriculum vitae
+- **Blog Posts**: Thoughts and insights on my research and academic life
 
-## Running Locally
+## 🛠️ Built With
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- **Jekyll**: Static site generator
+- **Academic Pages Theme**: Based on the Minimal Mistakes theme
+- **GitHub Pages**: Free hosting and automatic deployment
+- **Markdown**: Content writing and formatting
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## 🚀 Quick Start
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+### Prerequisites
+- Git
+- Ruby (version 2.7 or higher)
+- Bundler gem
 
-# Maintenance 
+### Local Development
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/HENGRUIZZZZ/HENGRUIZZZZ.github.io.git
+   cd HENGRUIZZZZ.github.io
+   ```
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+2. **Install dependencies**
+   ```bash
+   bundle install --path vendor/bundle
+   ```
 
-## Bugfixes and enhancements
+3. **Run the site locally**
+   ```bash
+   bundle exec jekyll serve --host localhost --port 4000
+   ```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+4. **View the site**
+   Open your browser and navigate to `http://localhost:4000`
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+### Alternative: Using Docker
+
+If you prefer using Docker to avoid Ruby setup issues:
+
+```bash
+docker run --rm -it -p 4000:4000 -v $(pwd):/srv/jekyll jekyll/jekyll:latest jekyll serve --host 0.0.0.0
+```
+
+## 📁 Repository Structure
+
+```
+├── _config.yml          # Site configuration
+├── _data/
+│   └── navigation.yml   # Navigation menu
+├── _includes/           # Reusable HTML components
+├── _layouts/            # Page templates
+├── _pages/              # Main pages (About, CV, etc.)
+├── _posts/              # Blog posts
+├── _publications/       # Research publications
+├── _sass/               # Styling files
+├── assets/              # CSS, JS, and other assets
+├── images/              # Image files
+└── files/               # PDFs and other downloadable files
+```
+
+## 🎨 Customization
+
+### Key Files to Modify
+
+- **`_config.yml`**: Update personal information, social media links, and site settings
+- **`_pages/about.md`**: Edit the main about page content
+- **`_pages/cv.md`**: Update your curriculum vitae
+- **`_data/navigation.yml`**: Customize the navigation menu
+- **`images/profile2.png`**: Replace with your profile photo
+
+### Adding Content
+
+- **Publications**: Add `.md` files to `_publications/` directory
+- **Blog Posts**: Add `.md` files to `_posts/` directory with date format `YYYY-MM-DD-title.md`
+- **Files**: Upload PDFs and other files to `files/` directory
+
+## 🔧 Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the `master` branch. The deployment typically takes 2-5 minutes to complete.
+
+### Deployment Status
+You can check the deployment status in the "Actions" tab of this repository.
+
+## 📚 Resources
+
+- **Jekyll Documentation**: [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
+- **Academic Pages Guide**: [https://academicpages.github.io/](https://academicpages.github.io/)
+- **GitHub Pages Documentation**: [https://docs.github.com/en/pages](https://docs.github.com/en/pages)
+- **Markdown Guide**: [https://www.markdownguide.org/](https://www.markdownguide.org/)
+
+## 📞 Contact
+
+If you have questions about this website or would like to collaborate:
+
+- **Email**: rmhizha@ucl.ac.uk
+- **GitHub**: [@HENGRUIZZZZ](https://github.com/HENGRUIZZZZ)
+- **Website**: [https://hengruizzzz.github.io](https://hengruizzzz.github.io)
+
+## 📄 License
+
+This project is based on the [Academic Pages template](https://github.com/academicpages/academicpages.github.io), which is derived from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) by Michael Rose. 
+
+The original template is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+⭐ **If you find this website template useful, please consider giving it a star!**
